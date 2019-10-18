@@ -1,13 +1,12 @@
-import React from "react";
-import "./App.css";
-import Test from "./components/test/test.component";
+import React from 'react';
+import './App.css';
+
+import HomePage from './pages/homepage/homepage.component';
 
 function App() {
   return (
-    <div className="App">
-      Her kommer React eCommerce applikasjonen vår.
-      <br />
-      <Test />
+    <div>
+      <HomePage />
     </div>
   );
 }
