@@ -1,10 +1,14 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import Test from "./components/test/test.component";
 
 function App() {
   return (
-    <div className="App">Her kommer React eCommerce applikasjonen vår.</div>
+    <div className="App">
+      Her kommer React eCommerce applikasjonen vår.
+      <br />
+      <Test />
+    </div>
   );
 }
 
