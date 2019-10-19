@@ -6,8 +6,6 @@ import HomePage from "./pages/homepage/homepage.component";
 function App() {
   return (
     <div>
-      Jaa
-      <br />
       <HomePage />
     </div>
   );
