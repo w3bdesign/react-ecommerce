@@ -4,7 +4,6 @@ import App from "./App";
 
 it("Kjører Krasj uten å krasje (skal bli rød)", () => {
   const div = document.createElement("div");
-  //ReactDOM.render(<App />, div);
-  ReactDOM.render(<Krasj />, div);
+  ReactDOM.render(<App />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
