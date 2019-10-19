@@ -42,7 +42,8 @@
   }
 
   .content {
-    height: 90px;
+    height: 150px;
+    min-width: 100px;
     padding: 0 25px;
     display: flex;
     flex-direction: column;
