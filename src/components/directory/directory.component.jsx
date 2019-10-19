@@ -3,6 +3,7 @@ import React from "react";
 import MenuItem from "../menu-item/menu-item.component";
 
 import "./directory.styles.scss";
+// TODO: Do not hardcode state
 
 class Directory extends React.Component {
   constructor() {
