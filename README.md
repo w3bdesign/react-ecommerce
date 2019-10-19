@@ -1,1 +1,3 @@
-## React Nettbutikk prosjekt
+## React Ecommerce
+
+- Added CircleCI testing
