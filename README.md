@@ -3,3 +3,5 @@
 # React Ecommerce
 
 This is currently a work in progress.
+
+Will be updated regularly.
