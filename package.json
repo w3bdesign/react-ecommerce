@@ -1,19 +1,13 @@
 {
-  "name": "react-ecommerce",
+  "name": "react-experiment",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "firebase": "6.0.2",
-    "node-sass": "4.12.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "5.0.0"
-  },
-  "devDependencies": {
-    "react-scripts": "3.1.2"
-  },
-  "resolutions": {
-    "babel-jest": "24.7.1"
+    "bulma": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-scripts": "3.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
