@@ -20,6 +20,7 @@ class App extends React.Component {
 
   unsubscribeFromAuth = null;
 
+  // TODO Fix memory leak here?
   componentDidMount() {
     this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
       this.setState({ currentUser: user });
