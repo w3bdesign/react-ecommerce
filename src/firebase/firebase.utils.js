@@ -3,14 +3,14 @@ import "firebase/firestore";
 import "firebase/auth";
 
 const config = {
-  apiKey: "AIzaSyBVXCHDEkgsxsR6K_wQHpWMIwurFioTizo",
-  authDomain: "react-webshop-df.firebaseapp.com",
-  databaseURL: "https://react-webshop-df.firebaseio.com",
-  projectId: "react-webshop-df",
-  storageBucket: "react-webshop-df.appspot.com",
-  messagingSenderId: "893271429658",
-  appId: "1:893271429658:web:50418b27d3af1423f2f7a3",
-  measurementId: "G-Y0HMGS2J3W"
+  apiKey: "AIzaSyD92tZ6phKTGjPukXlSFLPFZt9HrPHVIB0",
+  authDomain: "reactwebshop.firebaseapp.com",
+  databaseURL: "https://reactwebshop.firebaseio.com",
+  projectId: "reactwebshop",
+  storageBucket: "reactwebshop.appspot.com",
+  messagingSenderId: "895554081780",
+  appId: "1:895554081780:web:3b73dfb4ce2c730c87dfa1",
+  measurementId: "G-0SMHFYP3QR"
 };
 
 firebase.initializeApp(config);
