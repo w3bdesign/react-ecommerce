@@ -1,9 +1,8 @@
 {
-  "name": "react-ecommerce",
+  "name": "react-experiment",
   "version": "0.2.0",
   "private": true,
   "dependencies": {
-    "bulma": "^0.8.0",
     "firebase": "^7.4.0",
     "node-sass": "^4.13.0",
     "react": "^16.11.0",
