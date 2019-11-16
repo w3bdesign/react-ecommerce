@@ -22,10 +22,12 @@ class App extends React.Component {
 
   // TODO Fix memory leak here?
   componentDidMount() {
+    // Add user object to state when Google authentication state has changed.
+    // This allows us to be able to use the data later in our application.
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
-
+        // Add listener to Firestore DocumentSnapShot event
         userRef.onSnapshot(snapShot => {
           this.setState({
             currentUser: {
@@ -41,11 +43,12 @@ class App extends React.Component {
       }
     });
   }
-
+  // Call unsubscribeFromAuth() to update the state when we destroy the App component
   componentWillUnmount() {
     this.unsubscribeFromAuth();
   }
 
+  // Build the routes for our application with React Router
   render() {
     return (
       <div>

@@ -6,6 +6,7 @@ import { ReactComponent as Logo } from "../../assets/crown.svg";
 
 import "./header.styles.scss";
 
+// Build the header component with React Router (Link)
 const Header = ({ currentUser }) => (
   <div className="header">
     <Link className="logo-container" to="/">
