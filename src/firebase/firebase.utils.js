@@ -17,14 +17,12 @@ const config = {
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
+
+  // Check and see if the userAuth data already exists in Firestore
   const userRef = firestore.doc(`users/${userAuth.uid}`);
-
   const snapShot = await userRef.get();
-  console.log(userRef);
-  console.log(snapShot);
-  console.log(userAuth.uid);
-  console.log(snapShot.exists);
 
+  // If it does not exist, we try to create the user in Firestore
   if (!snapShot.exists) {
     const { displayName, email } = userAuth;
     const createdAt = new Date();
@@ -46,6 +44,7 @@ firebase.initializeApp(config);
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 
+// Google authentication
 const provider = new firebase.auth.GoogleAuthProvider();
 provider.setCustomParameters({
   prompt: "select_account"
