@@ -3,9 +3,9 @@
 # React Ecommerce
 
 This is currently a work in progress.
-
 Will be updated regularly.
 
 ## Features
 
 - Google authentication
+- Registration with email/password
