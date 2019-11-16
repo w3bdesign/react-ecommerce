@@ -15,12 +15,12 @@ class SignIn extends React.Component {
       password: ""
     };
   }
-
+  // Update the state when the form is submitted
   handleSubmit = event => {
     event.preventDefault();
     this.setState({ email: "", password: "" });
   };
-
+  // Update the state when the form input changes
   handleChange = event => {
     const { value, name } = event.target;
     this.setState({ [name]: value });
