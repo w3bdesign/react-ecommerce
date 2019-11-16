@@ -8,4 +8,4 @@ Will be updated regularly.
 ## Features
 
 - Google authentication
-- Registration with email/password
+- Registration and login with email/password
