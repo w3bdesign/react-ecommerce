@@ -1,3 +1,3 @@
 ## Sign-in and sign-up
 
-This displays the SignIn and SignUp components
+This displays the SignIn and SignUp components for user registration.
