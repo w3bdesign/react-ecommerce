@@ -13,6 +13,7 @@ import Header from "./components/header/header.component";
 class App extends React.Component {
   constructor() {
     super();
+    // Set default state (currentUser) when App is constructed
     this.state = {
       currentUser: null
     };
@@ -35,6 +36,7 @@ class App extends React.Component {
               ...snapShot.data()
             }
           });
+          console.log(this.state);
         });
       } else {
         this.setState({
