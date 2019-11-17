@@ -1,3 +1,7 @@
+/*
+https://firebase.google.com/docs/reference/js/
+*/
+
 import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";

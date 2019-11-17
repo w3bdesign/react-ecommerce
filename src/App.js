@@ -28,7 +28,7 @@ class App extends React.Component {
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
-        // Add listener to Firestore DocumentSnapShot event
+        // Add listener to Firestore DocumentSnapShot event and set the state to the currentUser
         userRef.onSnapshot(snapShot => {
           this.setState({
             currentUser: {
