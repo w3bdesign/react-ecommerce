@@ -7,23 +7,19 @@ In Redux, all the application state is stored as a single object. It's a good id
 https://redux.js.org/basics/reducers
 */
 
-import { UserActionTypes } from "./user.types";
+import CartActionTypes from "./cart.types";
 
-// Set a default initial state
 const INITIAL_STATE = {
-  currentUser: null
+  hidden: true
 };
 
-// Define our userReducer and set a default value of state
-// Check the action and return the existing state and add the action payload
-const userReducer = (state = INITIAL_STATE, action) => {
+const cartReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case UserActionTypes.SET_CURRENT_USER:
-      return { ...state, currentUser: action.payload };
-
+    case CartActionTypes.TOGGLE_CART_HIDDEN:
+      return { ...state, hidden: !state.hidden };
     default:
       return state;
   }
 };
 
-export default userReducer;
+export default cartReducer;
