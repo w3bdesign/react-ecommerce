@@ -10,3 +10,7 @@ Will be updated regularly.
 - Google authentication
 - Registration and login with email/password
 - Redux
+
+## TODO
+
+- Cypress tests (see https://docs.cypress.io/guides/references/best-practices.html)
