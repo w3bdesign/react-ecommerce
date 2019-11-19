@@ -1,6 +1,6 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
-import { BrowserRouter } from "react-router-dom";
+import { Switch, Route, Redirect, BrowserRouter } from "react-router-dom";
+
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 
 // Connect Redux to our header
@@ -54,7 +54,17 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/shop" component={ShopPage} />
-            <Route path="/signin" component={SignInAndSignUpPage} />
+            <Route
+              exact
+              path="/signin"
+              render={() =>
+                this.props.currentUser ? (
+                  <Redirect to="/" />
+                ) : (
+                  <SignInAndSignUpPage />
+                )
+              }
+            />
           </Switch>
         </BrowserRouter>
       </div>
@@ -62,8 +72,29 @@ class App extends React.Component {
   }
 }
 
+// Redirect user if signed in, so we cant access /signin
+
+const mapStateToProps = ({ user }) => ({
+  currentUser: user.currentUser
+});
+
 const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
 });
 
-export default connect(null, mapDispatchToProps)(App);
+/*
+As the second argument passed in to connect, mapDispatchToProps is used for dispatching actions to the store (state).
+
+Dispatch is a function of the Redux store. You call store.dispatch to dispatch an action. This is the only way to trigger a state change.
+
+With React Redux, your components never access the store directly - connect does it for you. 
+React Redux gives you two ways to let components dispatch actions:
+
+- By default, a connected component receives props.dispatch and can dispatch actions itself.
+- Connect can accept an argument called mapDispatchToProps, which lets you create functions that dispatch when called, 
+and pass those functions as props to your component.
+
+https://react-redux.js.org/using-react-redux/connect-mapdispatch
+*/
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
