@@ -20,8 +20,12 @@ https://redux.js.org/basics/actions#actions
 
 import CartActionTypes from "./cart.types";
 
-const toggleCartHidden = () => ({
+export const toggleCartHidden = () => ({
   type: CartActionTypes.TOGGLE_CART_HIDDEN
 });
 
-export default toggleCartHidden;
+// Tell Redux that we are trying to add a new item to our cart
+export const addItem = item => ({
+  type: CartActionTypes.ADD_ITEM,
+  payload: item
+});
