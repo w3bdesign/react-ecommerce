@@ -8,6 +8,7 @@ https://redux.js.org/basics/reducers
 */
 
 import CartActionTypes from "./cart.types";
+import { addItemToCart } from "./cart.utils";
 
 const INITIAL_STATE = {
   hidden: true,
@@ -22,7 +23,7 @@ const cartReducer = (state = INITIAL_STATE, action) => {
       // Add the existing cartItems plus the new items (action.payload) to cartItems array
       return {
         ...state,
-        cartItems: [...state.cartItems, action.payload]
+        cartItems: addItemToCart(state.cartItems, action.payload)
       };
     default:
       return state;
