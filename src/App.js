@@ -3,6 +3,9 @@ import { Switch, Route, Redirect, BrowserRouter } from "react-router-dom";
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 
+import { selectCurrentUser } from "../src/redux/user/user.selectors";
+import { createStructuredSelector } from "reselect";
+
 // Connect Redux to our header
 import { connect } from "react-redux";
 
@@ -74,8 +77,8 @@ class App extends React.Component {
 
 // Redirect user if signed in, so we cant access /signin
 
-const mapStateToProps = ({ user }) => ({
-  currentUser: user.currentUser
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser
 });
 
 const mapDispatchToProps = dispatch => ({
