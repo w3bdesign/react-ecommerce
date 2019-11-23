@@ -10,6 +10,7 @@ Will be updated regularly.
 - Google authentication
 - Registration and login with email/password
 - Redux
+- Shopping cart
 
 ## TODO
 
