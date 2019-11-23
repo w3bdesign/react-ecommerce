@@ -6,7 +6,7 @@ const SHOP_DATA = [
     items: [
       {
         id: 1,
-        name: "Brun Hatt",
+        name: "Brun Brim",
         imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
         price: 25
       },
@@ -24,7 +24,7 @@ const SHOP_DATA = [
       },
       {
         id: 4,
-        name: "Grå Hatt",
+        name: "Grå Brim",
         imageUrl: "https://i.ibb.co/RjBLWxB/grey-brim.png",
         price: 25
       },
@@ -36,7 +36,7 @@ const SHOP_DATA = [
       },
       {
         id: 6,
-        name: "Palmetre Cap",
+        name: "Palm Tree Cap",
         imageUrl: "https://i.ibb.co/rKBDvJX/palm-tree-cap.png",
         price: 14
       },
@@ -48,7 +48,7 @@ const SHOP_DATA = [
       },
       {
         id: 8,
-        name: "Ulvecaps",
+        name: "Wolf Cap",
         imageUrl: "https://i.ibb.co/1f2nWMM/wolf-cap.png",
         price: 14
       },
@@ -62,7 +62,7 @@ const SHOP_DATA = [
   },
   {
     id: 2,
-    title: "Sko",
+    title: "Sneakers",
     routeName: "sneakers",
     items: [
       {
@@ -79,7 +79,7 @@ const SHOP_DATA = [
       },
       {
         id: 12,
-        name: "Sort Converse",
+        name: "Svart Converse",
         imageUrl: "https://i.ibb.co/bPmVXyP/black-converse.png",
         price: 110
       },
@@ -128,19 +128,19 @@ const SHOP_DATA = [
       },
       {
         id: 19,
-        name: "Blå Jean Jacket",
+        name: "Blue Jean Jacket",
         imageUrl: "https://i.ibb.co/mJS6vz0/blue-jean-jacket.png",
         price: 90
       },
       {
         id: 20,
-        name: "Grå Jean Jacket",
+        name: "Grey Jean Jacket",
         imageUrl: "https://i.ibb.co/N71k1ML/grey-jean-jacket.png",
         price: 90
       },
       {
         id: 21,
-        name: "Brun Shearling",
+        name: "Brown Shearling",
         imageUrl: "https://i.ibb.co/s96FpdP/brown-shearling.png",
         price: 165
       },
@@ -159,13 +159,13 @@ const SHOP_DATA = [
     items: [
       {
         id: 23,
-        name: "Blå Tanktop",
+        name: "Blue Tanktop",
         imageUrl: "https://i.ibb.co/7CQVJNm/blue-tank.png",
         price: 25
       },
       {
         id: 24,
-        name: "Floral Bluse",
+        name: "Floral Blouse",
         imageUrl: "https://i.ibb.co/4W2DGKm/floral-blouse.png",
         price: 20
       },
@@ -183,19 +183,19 @@ const SHOP_DATA = [
       },
       {
         id: 27,
-        name: "Stripet Genser",
+        name: "Striped Sweater",
         imageUrl: "https://i.ibb.co/KmSkMbH/striped-sweater.png",
         price: 45
       },
       {
         id: 28,
-        name: "Gul Track Suit",
+        name: "Yellow Track Suit",
         imageUrl: "https://i.ibb.co/v1cvwNf/yellow-track-suit.png",
         price: 135
       },
       {
         id: 29,
-        name: "Hvit Bluse",
+        name: "White Blouse",
         imageUrl: "https://i.ibb.co/qBcrsJg/white-vest.png",
         price: 20
       }

@@ -1,10 +1,9 @@
 import React from "react";
 import CustomButton from "../custom-button/custom-button.component";
+import "./collection-item.styles.scss";
 
 // Redux
 import { connect } from "react-redux";
-
-import "./collection-item.styles.scss";
 import { addItem } from "../../redux/cart/cart.actions";
 
 const CollectionItem = ({ item, addItem }) => {
@@ -30,6 +29,7 @@ const CollectionItem = ({ item, addItem }) => {
 
 // https://react-redux.js.org/using-react-redux/connect-mapdispatch
 
+// Dispatch the new AddItem from Cart Actions
 const mapDispatchToProps = dispatch => ({
   addItem: item => dispatch(addItem(item))
 });
