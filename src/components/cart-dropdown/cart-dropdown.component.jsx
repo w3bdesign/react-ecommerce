@@ -8,14 +8,22 @@ import CartItem from "../cart-item/cart-item.component";
 import { createStructuredSelector } from "reselect";
 import { selectCartItems } from "../../redux/cart/cart.selectors";
 
-const CartDropdown = ({ cartItems }) => (
+import { withRouter } from "react-router";
+
+const CartDropdown = ({ cartItems, history }) => (
   <div className="cart-dropdown">
     <div className="cart-items">
-      {cartItems.map(cartItem => (
-        <CartItem key={cartItem.id} item={cartItem} />
-      ))}
+      {cartItems.length ? (
+        cartItems.map(cartItem => (
+          <CartItem key={cartItem.id} item={cartItem} />
+        ))
+      ) : (
+        <span className="empty-message">Din handlekurv er tom</span>
+      )}
     </div>
-    <CustomButton>GÅ TIL KASSE</CustomButton>
+    <CustomButton onClick={() => history.push("/checkout")}>
+      GÅ TIL KASSE
+    </CustomButton>
   </div>
 );
 
@@ -23,4 +31,5 @@ const mapStateToProps = createStructuredSelector({
   cartItems: selectCartItems
 });
 
-export default connect(mapStateToProps)(CartDropdown);
+// Wrap with withRouter so we have access to our browser history (like the back button)
+export default withRouter(connect(mapStateToProps)(CartDropdown));
