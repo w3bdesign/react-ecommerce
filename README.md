@@ -15,6 +15,8 @@ Will be updated regularly.
 
 ## Setup
 
+Clone the repo and do a ``` npm install ```
+
 Setup a Firebase account with Google authentication and local authentication enabled, then add a Firebase database with 
 a collection called <b>users</b> and add a document with the fields:
 - email 
@@ -32,6 +34,7 @@ REACT_APP_MESSAGINGSENDERID=INSERT THIS FROM GOOGLE
 REACT_APP_APPID=INSERT THIS FROM GOOGLE
 REACT_APP_MEASUREMENTID=INSERT THIS FROM GOOGLE
 ```
+Start the application with either ``` npm start ``` or ``` yarn start ```
 
 ## TODO
 
