@@ -11,3 +11,9 @@ export const addItem = item => ({
   type: CartActionTypes.ADD_ITEM,
   payload: item
 });
+
+// Tell Redux that we are trying to remove an item to our cart
+export const clearItemFromCart = item => ({
+  type: CartActionTypes.CLEAR_ITEM_FROM_CART,
+  payload: item
+});
