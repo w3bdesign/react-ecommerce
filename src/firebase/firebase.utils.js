@@ -1,22 +1,21 @@
-/*
-https://firebase.google.com/docs/reference/js/
-*/
+// https://firebase.google.com/docs/reference/js/
 
 import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
 
-// TODO Export to .env file and install dotenv?
-// https://thatweirddeveloper.com/how-to-switch-firebase-project-using-dotenv
+// DONE Export config to .env file
+// https://create-react-app.dev/docs/adding-custom-environment-variables/
+
 const config = {
-  apiKey: "AIzaSyD92tZ6phKTGjPukXlSFLPFZt9HrPHVIB0",
-  authDomain: "reactwebshop.firebaseapp.com",
-  databaseURL: "https://reactwebshop.firebaseio.com",
-  projectId: "reactwebshop",
-  storageBucket: "reactwebshop.appspot.com",
-  messagingSenderId: "895554081780",
-  appId: "1:895554081780:web:3b73dfb4ce2c730c87dfa1",
-  measurementId: "G-0SMHFYP3QR"
+  apiKey: process.env.REACT_APP_APIKEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASEURL,
+  projectId: process.env.REACT_APP_PROJECTID,
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+  appId: process.env.REACT_APP_APPID,
+  measurementId: process.env.REACT_APP_MEASUREMENTID
 };
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
