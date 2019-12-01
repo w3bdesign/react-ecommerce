@@ -23,7 +23,7 @@ a collection called <b>users</b> and add a document with the fields:
 - createdAt 
 - displayName
 
-Then create a .env file with the following variables:
+Then create a .env file with the following variables (you can find this information in Firebase):
 ```
 REACT_APP_APIKEY=INSERT THIS FROM GOOGLE
 REACT_APP_AUTH_DOMAIN=INSERT THIS FROM GOOGLE
