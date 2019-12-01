@@ -10,13 +10,12 @@ export const addItemToCart = (cartItems, cartItemToAdd) => {
   );
 
   // The map method calls the callbackfn function one time for each element in the array.
-  //Calls a defined callback function on each element of an array, and returns an array that contains the results.
+  // Calls a defined callback function on each element of an array, and returns an array that contains the results.
 
   if (existingCartItem) {
     return cartItems.map(cartItem =>
-      /*
-        If cartItem ids match, return original cartItem array and quantity + 1 (also needed for component update)
-      */
+      // If cartItem ids match, return original cartItem array and quantity + 1 (also needed for component update)
+
       cartItem.id === cartItemToAdd.id
         ? {
             ...cartItem,
