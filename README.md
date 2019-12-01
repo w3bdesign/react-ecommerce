@@ -11,6 +11,7 @@ Will be updated regularly.
 - Google authentication
 - Registration and login with email/password
 - Redux
+- Redux-persist
 - Shopping cart
 
 ## Setup
@@ -36,6 +37,6 @@ REACT_APP_MEASUREMENTID=INSERT THIS FROM GOOGLE
 ```
 Start the application with either ``` npm start ``` or ``` yarn start ```
 
-## TODO
+## Todo
 
 - Implement tests (see https://docs.cypress.io/guides/references/best-practices.html and https://www.robinwieruch.de/minimal-react-webpack-babel-setup)
