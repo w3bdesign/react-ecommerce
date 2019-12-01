@@ -9,13 +9,8 @@ export const addItemToCart = (cartItems, cartItemToAdd) => {
     cartItem => cartItem.id === cartItemToAdd.id
   );
 
-  /*
-  Map
-
-  A function that accepts up to three arguments. 
-  The map method calls the callbackfn function one time for each element in the array.
-  Calls a defined callback function on each element of an array, and returns an array that contains the results.
-*/
+  // The map method calls the callbackfn function one time for each element in the array.
+  //Calls a defined callback function on each element of an array, and returns an array that contains the results.
 
   if (existingCartItem) {
     return cartItems.map(cartItem =>
