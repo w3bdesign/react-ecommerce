@@ -13,6 +13,26 @@ Will be updated regularly.
 - Redux
 - Shopping cart
 
+## Setup
+
+Setup a Firebase account with Google authentication and local authentication enabled, then add a Firebase database with 
+a collection called <b>users</b> and add a document with the fields:
+- email 
+- createdAt 
+- displayName
+
+Then create a .env file with the following variables:
+```
+REACT_APP_APIKEY=INSERT THIS FROM GOOGLE
+REACT_APP_AUTH_DOMAIN=INSERT THIS FROM GOOGLE
+REACT_APP_DATABASEURL=INSERT THIS FROM GOOGLE
+REACT_APP_PROJECTID=INSERT THIS FROM GOOGLE
+REACT_APP_STORAGEBUCKET=INSERT THIS FROM GOOGLE
+REACT_APP_MESSAGINGSENDERID=INSERT THIS FROM GOOGLE
+REACT_APP_APPID=INSERT THIS FROM GOOGLE
+REACT_APP_MEASUREMENTID=INSERT THIS FROM GOOGLE
+```
+
 ## TODO
 
 - Implement tests (see https://docs.cypress.io/guides/references/best-practices.html and https://www.robinwieruch.de/minimal-react-webpack-babel-setup)
