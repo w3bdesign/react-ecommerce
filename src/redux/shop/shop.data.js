@@ -1,36 +1,36 @@
-const SHOP_DATA = [
-  {
+const SHOP_DATA = {
+  hats: {
     id: 1,
-    title: "Hatter",
+    title: "Hats",
     routeName: "hats",
     items: [
       {
         id: 1,
-        name: "Brun Brim",
+        name: "Brown Brim",
         imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
         price: 25
       },
       {
         id: 2,
-        name: "Blå Beanie",
+        name: "Blue Beanie",
         imageUrl: "https://i.ibb.co/ypkgK0X/blue-beanie.png",
         price: 18
       },
       {
         id: 3,
-        name: "Brun Cowboyhatt",
+        name: "Brown Cowboy",
         imageUrl: "https://i.ibb.co/QdJwgmp/brown-cowboy.png",
         price: 35
       },
       {
         id: 4,
-        name: "Grå Brim",
+        name: "Grey Brim",
         imageUrl: "https://i.ibb.co/RjBLWxB/grey-brim.png",
         price: 25
       },
       {
         id: 5,
-        name: "Grønn Beanie",
+        name: "Green Beanie",
         imageUrl: "https://i.ibb.co/YTjW3vF/green-beanie.png",
         price: 18
       },
@@ -42,7 +42,7 @@ const SHOP_DATA = [
       },
       {
         id: 7,
-        name: "Rød Beanie",
+        name: "Red Beanie",
         imageUrl: "https://i.ibb.co/bLB646Z/red-beanie.png",
         price: 18
       },
@@ -54,13 +54,13 @@ const SHOP_DATA = [
       },
       {
         id: 9,
-        name: "Blå Snapback",
+        name: "Blue Snapback",
         imageUrl: "https://i.ibb.co/X2VJP2W/blue-snapback.png",
         price: 16
       }
     ]
   },
-  {
+  sneakers: {
     id: 2,
     title: "Sneakers",
     routeName: "sneakers",
@@ -79,7 +79,7 @@ const SHOP_DATA = [
       },
       {
         id: 12,
-        name: "Svart Converse",
+        name: "Black Converse",
         imageUrl: "https://i.ibb.co/bPmVXyP/black-converse.png",
         price: 110
       },
@@ -115,9 +115,9 @@ const SHOP_DATA = [
       }
     ]
   },
-  {
+  jackets: {
     id: 3,
-    title: "Jakker",
+    title: "Jackets",
     routeName: "jackets",
     items: [
       {
@@ -152,9 +152,9 @@ const SHOP_DATA = [
       }
     ]
   },
-  {
+  womens: {
     id: 4,
-    title: "Dame",
+    title: "Womens",
     routeName: "womens",
     items: [
       {
@@ -201,9 +201,9 @@ const SHOP_DATA = [
       }
     ]
   },
-  {
+  mens: {
     id: 5,
-    title: "Menn",
+    title: "Mens",
     routeName: "mens",
     items: [
       {
@@ -244,6 +244,6 @@ const SHOP_DATA = [
       }
     ]
   }
-];
+};
 
 export default SHOP_DATA;
