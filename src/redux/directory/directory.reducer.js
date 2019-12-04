@@ -16,7 +16,7 @@ const INITIAL_STATE = {
       title: "sko",
       imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
       id: 3,
-      linkUrl: "shop/shoe"
+      linkUrl: "shop/sneakers"
     },
     {
       title: "dame",
@@ -30,7 +30,7 @@ const INITIAL_STATE = {
       imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
       size: "large",
       id: 5,
-      linkUrl: "shop/men"
+      linkUrl: "shop/mens"
     }
   ]
 };
