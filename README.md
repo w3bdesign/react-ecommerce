@@ -13,6 +13,7 @@ Will be updated regularly.
 - Redux
 - Redux-persist
 - Shopping cart
+- Reselect
 
 ## Setup
 
