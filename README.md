@@ -29,7 +29,9 @@ a collection called <b>users</b> and add a document with the fields:
 
 Then create a Stripe account and copy the publishable API key. This will be entered into the .env file later.
 
-Then create a .env file in the application root directory with the following variables (you can find this information in Firebase):
+Then create a .env file in the application root directory with the following variables (you can find this information in Firebase).
+
+<img src="https://d3ansictanv2wj.cloudfront.net/fig_5-edeb343cd558a6242490ed3d2d646b48.png"/>
 
 ```
 REACT_APP_APIKEY=INSERT THIS FROM GOOGLE
