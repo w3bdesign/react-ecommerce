@@ -8,8 +8,8 @@ const StripeCheckoutButton = ({ price }) => {
   const publishableKey = process.env.REACT_APP_STRIPEKEY;
 
   const onToken = token => {
-    console.log(token);
-    alert("Betaling mottatt");
+    //console.log(token);
+    alert("Testkjøp fullført. Din ordre blir ikke behandlet.");
   };
   return (
     <StripeCheckout
