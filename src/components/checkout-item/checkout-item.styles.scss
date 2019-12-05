@@ -1,10 +1,14 @@
 .checkout-item {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: 100px;
   border-bottom: 1px solid darkgrey;
   padding: 15px 0;
   font-size: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   .image-container {
@@ -24,6 +28,8 @@
   }
 
   .quantity {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     .arrow {

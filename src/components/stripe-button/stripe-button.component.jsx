@@ -13,7 +13,6 @@ const StripeCheckoutButton = ({ price }) => {
   };
   return (
     <StripeCheckout
-      key="mytestkey"
       label="Kjøp nå"
       name="React Nettbutikk"
       billingAddress
