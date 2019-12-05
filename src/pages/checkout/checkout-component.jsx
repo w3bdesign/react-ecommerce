@@ -33,15 +33,18 @@ const CheckoutPage = ({ cartItems, total }) => (
         <span>Fjern</span>
       </div>
     </div>
-
     {cartItems.map(cartItem => (
       <CheckoutItem key={cartItem.id} cartItem={cartItem} />
     ))}
-
     <div className="total">
       <span>Total {total} kr</span>
     </div>
-
+    <div className="test-warning">
+      Bruk følgende informasjon for å utføre et testkjøp: <br />
+      4242 4242 4242 4242 - 01/20 - 123
+    </div>
+    <br />
+    <br />
     <StripeCheckoutButton price={total} />
   </div>
 );
