@@ -15,6 +15,7 @@ Will be updated regularly.
 - Shopping cart
 - Reselect (for Redux)
 - Stripe
+- Styled components (CSS in JS)
 
 ## Setup
 
