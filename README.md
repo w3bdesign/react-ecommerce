@@ -13,19 +13,24 @@ Will be updated regularly.
 - Redux
 - Redux-persist
 - Shopping cart
-- Reselect
+- Reselect (for Redux)
+- Stripe
 
 ## Setup
 
-Clone the repo and do a ``` npm install ```
+Clone the repo and do a `npm install`
 
-Setup a Firebase account with Google authentication and local authentication enabled, then add a Firebase database with 
+Setup a Firebase account with Google authentication and local authentication enabled, then add a Firebase database with
 a collection called <b>users</b> and add a document with the fields:
-- email 
-- createdAt 
+
+- email
+- createdAt
 - displayName
 
-Then create a .env file with the following variables (you can find this information in Firebase):
+Then create a Stripe account and copy the publishable API key. This will be entered into the .env file later.
+
+Then create a .env file in the application root directory with the following variables (you can find this information in Firebase):
+
 ```
 REACT_APP_APIKEY=INSERT THIS FROM GOOGLE
 REACT_APP_AUTH_DOMAIN=INSERT THIS FROM GOOGLE
@@ -35,8 +40,10 @@ REACT_APP_STORAGEBUCKET=INSERT THIS FROM GOOGLE
 REACT_APP_MESSAGINGSENDERID=INSERT THIS FROM GOOGLE
 REACT_APP_APPID=INSERT THIS FROM GOOGLE
 REACT_APP_MEASUREMENTID=INSERT THIS FROM GOOGLE
+REACT_APP_STRIPEKEY=INSERT THIS FROM STRIPE
 ```
-Start the application with either ``` npm start ``` or ``` yarn start ```
+
+Start the application with either `npm start` or `yarn start`
 
 ## Todo
 
