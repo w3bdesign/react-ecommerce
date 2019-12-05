@@ -43,8 +43,7 @@ const CheckoutPage = ({ cartItems, total }) => (
       Bruk følgende informasjon for å utføre et testkjøp: <br />
       4242 4242 4242 4242 - 01/20 - 123
     </div>
-    <br />
-    <br />
+
     <StripeCheckoutButton price={total} />
   </div>
 );
