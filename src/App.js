@@ -19,6 +19,8 @@ import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up
 import Header from "./components/header/header.component";
 import CheckoutPage from "./pages/checkout/checkout-component";
 
+import styled from "styled-components";
+
 class App extends React.Component {
   unsubscribeFromAuth = null;
 
