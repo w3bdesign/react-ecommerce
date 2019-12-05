@@ -52,3 +52,4 @@ Start the application with either `npm start` or `yarn start`
 ## Todo
 
 - Implement tests (see https://docs.cypress.io/guides/references/best-practices.html and https://www.robinwieruch.de/minimal-react-webpack-babel-setup)
+- GraphQL with Apollo
