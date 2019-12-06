@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 // Connect Redux to our header
 import { connect } from "react-redux";
@@ -14,34 +13,34 @@ import { selectCurrentUser } from "../../redux/user/user.selectors";
 
 import { ReactComponent as Logo } from "../../assets/crown.svg";
 
-import "./header.styles.scss";
+import {
+  HeaderContainer,
+  LogoContainer,
+  OptionsContainer,
+  OptionDiv,
+  OptionLink
+} from "./header.styles";
 
 // Build the header component with React Router (Link)
 const Header = ({ currentUser, hidden }) => (
-  <div className="header">
-    <Link className="logo-container" to="/">
+  <HeaderContainer>
+    <LogoContainer to="/">
       <Logo className="logo" />
-    </Link>
-    <div className="options">
-      <Link className="option" to="/shop">
-        BUTIKK
-      </Link>
-      <Link className="option" to="/shop">
-        KONTAKT
-      </Link>
+    </LogoContainer>
+
+    <OptionsContainer>
+      <OptionLink to="/shop">BUTIKK</OptionLink>
+      <OptionLink to="/shop">KONTAKT</OptionLink>
+
       {currentUser ? (
-        <div className="option" onClick={() => auth.signOut()}>
-          UTLOGGING
-        </div>
+        <OptionDiv onClick={() => auth.signOut()}>UTLOGGING</OptionDiv>
       ) : (
-        <Link className="option" to="/signin">
-          INNLOGGING
-        </Link>
+        <OptionLink to="/signin">INNLOGGING</OptionLink>
       )}
       <CartIcon />
-    </div>
+    </OptionsContainer>
     {hidden ? null : <CartDropDown />}
-  </div>
+  </HeaderContainer>
 );
 
 // We want to access our currentUser from our Redux reducer. A more advanced method of destructuring (nested values).
