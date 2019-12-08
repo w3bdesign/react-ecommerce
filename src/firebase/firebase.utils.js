@@ -4,7 +4,6 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
 
-// DONE Export config to .env file
 // https://create-react-app.dev/docs/adding-custom-environment-variables/
 
 const config = {
@@ -41,6 +40,12 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
     }
   }
   return userRef;
+};
+
+// Add a new util so that we can import data like shop.data.js into Firebase
+export const addCollectionAndDocuments = (collectionKey, objectsToAdd) => {
+  const collectionRef = firestore.collection(collectionKey);
+  console.log(collectionRef);
 };
 
 firebase.initializeApp(config);
