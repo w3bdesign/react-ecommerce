@@ -9,7 +9,6 @@ Will be updated regularly.
 ## Features
 
 - Google authentication
-- Google Firebase
 - Registration and login with email/password
 - Redux
 - Redux-persist
