@@ -1,7 +1,11 @@
 import React from "react";
 import { Switch, Route, Redirect, BrowserRouter } from "react-router-dom";
 
-import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
+import {
+  auth,
+  createUserProfileDocument,
+  addCollectionAndDocuments
+} from "./firebase/firebase.utils";
 
 import { selectCurrentUser } from "../src/redux/user/user.selectors";
 import { createStructuredSelector } from "reselect";
@@ -19,6 +23,8 @@ import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up
 import Header from "./components/header/header.component";
 import CheckoutPage from "./pages/checkout/checkout-component";
 
+import { selectCollectionsForPreview } from "./redux/shop/shop.selectors";
+
 class App extends React.Component {
   unsubscribeFromAuth = null;
 
@@ -27,7 +33,7 @@ class App extends React.Component {
     // Add user object to state when Google authentication state has changed.
     // This allows us to be able to use the data later in our application.
 
-    const { setCurrentUser } = this.props;
+    const { setCurrentUser, collectionsArray } = this.props;
 
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
@@ -42,6 +48,7 @@ class App extends React.Component {
       }
 
       setCurrentUser(userAuth);
+      addCollectionAndDocuments("collections", collectionsArray);
     });
   }
   // Call unsubscribeFromAuth() to update the state when we destroy the App component
@@ -80,26 +87,12 @@ class App extends React.Component {
 // Redirect user if signed in, so we cant access /signin
 
 const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser
+  currentUser: selectCurrentUser,
+  collectionsArray: selectCollectionsForPreview
 });
 
 const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
 });
-
-/*
-As the second argument passed in to connect, mapDispatchToProps is used for dispatching actions to the store (state).
-
-Dispatch is a function of the Redux store. You call store.dispatch to dispatch an action. This is the only way to trigger a state change.
-
-With React Redux, your components never access the store directly - connect does it for you. 
-React Redux gives you two ways to let components dispatch actions:
-
-- By default, a connected component receives props.dispatch and can dispatch actions itself.
-- Connect can accept an argument called mapDispatchToProps, which lets you create functions that dispatch when called, 
-and pass those functions as props to your component.
-
-https://react-redux.js.org/using-react-redux/connect-mapdispatch
-*/
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
