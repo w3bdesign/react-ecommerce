@@ -51,8 +51,9 @@ REACT_APP_STRIPEKEY=INSERT THIS FROM STRIPE
 
 Start the application with either `npm start` or `yarn start`
 
-## Todo
+## TODO
 
 - Implement tests (see https://docs.cypress.io/guides/references/best-practices.html and https://www.robinwieruch.de/minimal-react-webpack-babel-setup)
 - GraphQL with Apollo
 - Use Lighthouse to find out how we can improve the application.
+- Redux thunk
