@@ -2,7 +2,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/fa283d61-4b14-45a2-a1c4-629cd351328b/deploy-status)](https://app.netlify.com/sites/react-c776ed/deploys)
 <img src="https://www.netlify.com/img/global/badges/netlify-dark.svg"/>
 
-
 # React Ecommerce
 
 This is currently a work in progress.
@@ -55,6 +54,7 @@ Start the application with either `npm start` or `yarn start`
 
 ## TODO
 
+- Consider replacing node-sass with sass? https://www.npmjs.com/package/sass
 - Implement tests (see https://docs.cypress.io/guides/references/best-practices.html and https://www.robinwieruch.de/minimal-react-webpack-babel-setup)
 - GraphQL with Apollo
 - Use Lighthouse to find out how we can improve the application.
