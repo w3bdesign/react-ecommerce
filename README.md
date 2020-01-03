@@ -6,8 +6,6 @@
 
 This is currently a work in progress.
 
-See https://react-c776ed.netlify.com for a live demo.
-
 ## Features
 
 - Google authentication
