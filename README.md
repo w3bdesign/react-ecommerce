@@ -5,7 +5,7 @@
 # React Ecommerce
 
 This is currently a work in progress.
-Will be updated regularly.
+See https://react-c776ed.netlify.com for a live demo.
 
 ## Features
 
