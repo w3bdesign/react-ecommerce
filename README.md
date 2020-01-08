@@ -58,3 +58,4 @@ Start the application with either `npm start` or `yarn start`
 - GraphQL with Apollo
 - Use Lighthouse to find out how we can improve the application.
 - Redux thunk
+- Interesting read if planning to utilize Firebase in production: https://pamartinezandres.com/lessons-learnt-the-hard-way-using-firebase-realtime-database-c609b52b9afb
