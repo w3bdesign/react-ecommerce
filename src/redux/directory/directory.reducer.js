@@ -2,7 +2,7 @@ const INITIAL_STATE = {
   sections: [
     {
       title: "hatter",
-      imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
+      imageUrl: "https://react-c776ed.netlify.com/hats.jpg",
       id: 1,
       linkUrl: "shop/hats"
     },
