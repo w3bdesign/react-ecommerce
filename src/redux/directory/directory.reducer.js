@@ -14,7 +14,7 @@ const INITIAL_STATE = {
     },
     {
       title: "sko",
-      imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
+      imageUrl: "https://react-c776ed.netlify.com/images/shoes.jpg",
       id: 3,
       linkUrl: "shop/sneakers"
     },
