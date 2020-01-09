@@ -8,8 +8,8 @@ This is currently a work in progress.
 
 ## Features
 
-- Google authentication
-- Google Firebase
+- Authentication with Firestore
+- Data storage with Google Firebase
 - Registration and login with email/password
 - Redux
 - Redux-persist
@@ -17,6 +17,7 @@ This is currently a work in progress.
 - Reselect (for Redux)
 - Stripe
 - Styled components (CSS in JS)
+- Responsive design
 
 ## Setup
 
