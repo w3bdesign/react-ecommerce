@@ -8,7 +8,7 @@ const INITIAL_STATE = {
     },
     {
       title: "jakker",
-      imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
+      imageUrl: "https://react-c776ed.netlify.com/images/jacket.jpg",
       id: 2,
       linkUrl: "shop/jackets"
     },
