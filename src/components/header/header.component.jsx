@@ -1,24 +1,24 @@
-import React from "react";
+import React from 'react';
 
 // Connect Redux to our header
-import { connect } from "react-redux";
-import { createStructuredSelector } from "reselect";
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
 
-import { auth } from "../../firebase/firebase.utils";
-import CartIcon from "../cart-icon/cart-icon.component";
+import { auth } from '../../firebase/firebase.utils';
+import CartIcon from '../cart-icon/cart-icon.component';
 
-import CartDropDown from "../cart-dropdown/cart-dropdown.component";
-import { selectCartHidden } from "../../redux/cart/cart.selectors";
-import { selectCurrentUser } from "../../redux/user/user.selectors";
+import CartDropDown from '../cart-dropdown/cart-dropdown.component';
+import { selectCartHidden } from '../../redux/cart/cart.selectors';
+import { selectCurrentUser } from '../../redux/user/user.selectors';
 
-import { ReactComponent as Logo } from "../../assets/crown.svg";
+import { ReactComponent as Logo } from '../../assets/crown.svg';
 
 import {
   HeaderContainer,
   LogoContainer,
   OptionsContainer,
   OptionLink
-} from "./header.styles";
+} from './header.styles';
 
 // Build the header component with React Router (Link)
 const Header = ({ currentUser, hidden }) => (
@@ -29,7 +29,6 @@ const Header = ({ currentUser, hidden }) => (
 
     <OptionsContainer>
       <OptionLink to="/shop">BUTIKK</OptionLink>
-      <OptionLink to="/shop">KONTAKT</OptionLink>
 
       {currentUser ? (
         <OptionLink as="div" onClick={() => auth.signOut()}>
