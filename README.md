@@ -54,10 +54,10 @@ Start the application with either `npm start` or `yarn start`
 
 ## TODO
 
-- Consider replacing node-sass with sass? https://www.npmjs.com/package/sass
 - Implement tests (see https://docs.cypress.io/guides/references/best-practices.html and https://www.robinwieruch.de/minimal-react-webpack-babel-setup)
 - GraphQL with Apollo
 - Use Lighthouse to find out how we can improve the application.
 - Redux thunk
 - Interesting read if planning to utilize Firebase in production: https://pamartinezandres.com/lessons-learnt-the-hard-way-using-firebase-realtime-database-c609b52b9afb
 - Look into some sort of caching to avoid data being read more often than necessary?
+- Consider replacing styled-components with https://github.com/styled-components/babel-plugin-styled-components for easier debugging
