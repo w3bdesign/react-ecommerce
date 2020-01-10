@@ -75,4 +75,7 @@ export const NameContainer = styled.span`
 export const PriceContainer = styled.span`
   width: 10%;
   text-align: right;
+  @media screen and (max-width: 800px) {
+    width: 30%;
+  }
 `;
