@@ -4,7 +4,9 @@
 
 # React Ecommerce
 
-This is currently a work in progress.
+This is currently a work in progress. 
+
+Note that it currently does not support IE 11, but it is possible to add support via polyfills (https://www.npmjs.com/package/react-app-polyfill) and a redesign.
 
 ## Features
 
@@ -17,7 +19,8 @@ This is currently a work in progress.
 - Reselect (for Redux)
 - Stripe
 - Styled components (CSS in JS)
-- Responsive design
+- Fully responsive design
+- Detects IE and shows a warning that it is not supported
 
 ## Setup
 
