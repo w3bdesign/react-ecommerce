@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Switch, Route, Redirect, BrowserRouter } from "react-router-dom";
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
@@ -52,7 +53,7 @@ class App extends React.Component {
   // Build the routes for our application with React Router
   render() {
     return (
-      <div>
+      <div>        
         <BrowserRouter>
         <GlobalStyle />
           <Header />

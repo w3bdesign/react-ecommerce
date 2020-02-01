@@ -25,7 +25,27 @@
 </head>
 
 <body>
+  <style>
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
+.ieonly {
+  display: block !important;
+  text-align: center;
+}
+}
+  </style>
   <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div class="ieonly" style="display: none;">
+    <h1>
+      Beklager, men vi støtter ikke IE11 eller eldre nettlesere<br />Vennligst
+      bytt til
+      <a
+        href="https://www.mozilla.org/nb-NO/firefox/new/"
+        title="Firefox"
+        rel="noreferrer"
+        >Mozilla Firefox</a
+      >
+    </h1>
+  </div>
   <div id="root"></div>
   <!--
       This HTML file is a template.
