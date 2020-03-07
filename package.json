@@ -1,6 +1,6 @@
 {
   "name": "react-experiment",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "private": true,
   "dependencies": {
     "elliptic": "^6.5.2",
