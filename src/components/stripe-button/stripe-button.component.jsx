@@ -7,8 +7,7 @@ const StripeCheckoutButton = ({ price }) => {
   // We fetch the Stripe API key from our .env file
   const publishableKey = process.env.REACT_APP_STRIPEKEY;
 
-  const onToken = token => {
-    //console.log(token);
+  const onToken = token => {    
     alert("Testkjøp fullført. Din ordre blir ikke behandlet.");
   };
   return (

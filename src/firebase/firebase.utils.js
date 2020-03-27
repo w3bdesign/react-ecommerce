@@ -4,8 +4,6 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
 
-// https://create-react-app.dev/docs/adding-custom-environment-variables/
-
 const config = {
   apiKey: process.env.REACT_APP_APIKEY,
   authDomain: process.env.REACT_APP_AUTH_DOMAIN,
