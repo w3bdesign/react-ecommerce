@@ -1,38 +1,38 @@
 const INITIAL_STATE = {
   sections: [
     {
-      title: "hatter",
-      imageUrl: "https://react-c776ed.netlify.com/images/hats.jpg",
+      title: 'hatter',
+      imageUrl: 'https://react-ecommerce-shop.netlify.app/images/hats.jpg',
       id: 1,
-      linkUrl: "shop/hats"
+      linkUrl: 'shop/hats',
     },
     {
-      title: "jakker",
-      imageUrl: "https://react-c776ed.netlify.com/images/jacket.jpg",
+      title: 'jakker',
+      imageUrl: 'https://react-ecommerce-shop.netlify.app/images/jacket.jpg',
       id: 2,
-      linkUrl: "shop/jackets"
+      linkUrl: 'shop/jackets',
     },
     {
-      title: "sko",
-      imageUrl: "https://react-c776ed.netlify.com/images/shoes.jpg",
+      title: 'sko',
+      imageUrl: 'https://react-ecommerce-shop.netlify.app/images/shoes.jpg',
       id: 3,
-      linkUrl: "shop/sneakers"
+      linkUrl: 'shop/sneakers',
     },
     {
-      title: "dame",
-      imageUrl: "https://react-c776ed.netlify.com/images/woman.jpg",
-      size: "large",
+      title: 'dame',
+      imageUrl: 'https://react-ecommerce-shop.netlify.app/images/woman.jpg',
+      size: 'large',
       id: 4,
-      linkUrl: "shop/womens"
+      linkUrl: 'shop/womens',
     },
     {
-      title: "menn",
-      imageUrl: "https://react-c776ed.netlify.com/images/man.jpg",
-      size: "large",
+      title: 'menn',
+      imageUrl: 'https://react-ecommerce-shop.netlify.app/images/man.jpg',
+      size: 'large',
       id: 5,
-      linkUrl: "shop/mens"
-    }
-  ]
+      linkUrl: 'shop/mens',
+    },
+  ],
 };
 
 const DirectoryReducer = (state = INITIAL_STATE, action) => {

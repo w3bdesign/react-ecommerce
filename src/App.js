@@ -1,24 +1,24 @@
-import React from "react";
+import React from 'react';
 
-import { Switch, Route, Redirect, BrowserRouter } from "react-router-dom";
+import { Switch, Route, Redirect, BrowserRouter } from 'react-router-dom';
 
-import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
+import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 
-import { selectCurrentUser } from "../src/redux/user/user.selectors";
-import { createStructuredSelector } from "reselect";
+import { selectCurrentUser } from '../src/redux/user/user.selectors';
+import { createStructuredSelector } from 'reselect';
 
 // Connect Redux to our header
-import { connect } from "react-redux";
+import { connect } from 'react-redux';
 
-import { setCurrentUser } from "../src/redux/user/user.actions";
+import { setCurrentUser } from '../src/redux/user/user.actions';
 
-import {GlobalStyle} from "./global.styles";
+import { GlobalStyle } from './global.styles';
 
-import HomePage from "./pages/homepage/homepage.component";
-import ShopPage from "./pages/shop/shop.component";
-import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
-import Header from "./components/header/header.component";
-import CheckoutPage from "./pages/checkout/checkout-component";
+import HomePage from './pages/homepage/homepage.component';
+import ShopPage from './pages/shop/shop.component';
+import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
+import Header from './components/header/header.component';
+import CheckoutPage from './pages/checkout/checkout-component';
 
 class App extends React.Component {
   unsubscribeFromAuth = null;
@@ -30,14 +30,14 @@ class App extends React.Component {
 
     const { setCurrentUser } = this.props;
 
-    this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
         // Add listener to Firestore DocumentSnapShot event and set the Redux store to the currentUser
-        userRef.onSnapshot(snapShot => {
+        userRef.onSnapshot((snapShot) => {
           setCurrentUser({
             id: snapShot.id,
-            ...snapShot.data()
+            ...snapShot.data(),
           });
         });
       }
@@ -53,9 +53,9 @@ class App extends React.Component {
   // Build the routes for our application with React Router
   render() {
     return (
-      <div>        
+      <div>
         <BrowserRouter>
-        <GlobalStyle />
+          <GlobalStyle />
           <Header />
           <Switch>
             <Route exact path="/" component={HomePage} />
@@ -82,11 +82,11 @@ class App extends React.Component {
 // Redirect user if signed in, so we cant access /signin
 
 const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser
+  currentUser: selectCurrentUser,
 });
 
-const mapDispatchToProps = dispatch => ({
-  setCurrentUser: user => dispatch(setCurrentUser(user))
+const mapDispatchToProps = (dispatch) => ({
+  setCurrentUser: (user) => dispatch(setCurrentUser(user)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
